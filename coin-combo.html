@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Coin Combo</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Coin Combo</h1>
+
+      <form id="coin-combo">
+        <div class="form-group">
+
+          <div class="entry">
+            <label for="change">Enter your change amount here:</label>
+            <input class="input-box" id="change" type="text" placeholder="ex. 0.79">
+          </div>
+<br>
+
+        </div>
+
+        <button type="submit" class="btn btn-success">Give me that change!</button>
+      </form>
+
+<hr>
+
+      <div id="result">
+        <p>The least amount of coins for your change amount is: <span class="make-change"></span></p>
+      </div>
+    </body>
+  </div>
+</html>

@@ -17,23 +17,16 @@ var coinCombo = function(change) {
     return totalCoins;
 };
 
+// ---------- jquery below ------------
+
+$(document).ready(function() {
+  $("form#coin-combo").submit(function(event) {
+    var change = ($("input#change").val());
+    var result = coinCombo(change);
 
 
+    $(".make-change").text(result);
 
-
-// $(document).ready(function() {
-//   $("form#leap-year").submit(function(event) {
-//     var year = parseInt($("input#year").val());
-//     var result = leapYear(year);
-//
-//     $(".year").text(year);
-//     if(!result) {
-//       $(".not").text("not");
-//     } else {
-//       $(".not").text("");
-//     }
-//
-//     $("#result").show();
-//     event.preventDefault();
-//   });
-// });
+    event.preventDefault();
+  });
+});
